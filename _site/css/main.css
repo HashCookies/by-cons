@@ -358,6 +358,7 @@ ul li { list-style: none; list-style-image: url("../images/list-style.svg"); fon
 
 #contact-card { background: #FFACA0; padding: 2.5rem 3rem; color: white; }
 #contact-card h4 { color: white; }
+#contact-card a { color: white; }
 #contact-card .button { background: #FFD0C9; color: #684D44; font-size: 1.3rem; letter-spacing: 4px; border: none; }
 
 label { color: #FFACA0; text-transform: uppercase; font-size: 1.3rem; }
