@@ -52,7 +52,7 @@ body {
     font-weight: normal;
   }
   @media (min-width: $screen-sm-min) {
-    background: url('/images/logo-title.svg') no-repeat;
+    background: url('../images/logo-title.svg') no-repeat;
     text-indent: -9999px;
     width: 517px;
     height: 24px;
@@ -115,7 +115,7 @@ ul {
   padding-left: 0;
   li {
     list-style: none;
-    list-style-image: url('/images/list-style.svg');
+    list-style-image: url('../images/list-style.svg');
     font-size: 1.6rem;
     list-style-position: inside;
   }
