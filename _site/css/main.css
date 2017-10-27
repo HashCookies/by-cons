@@ -333,9 +333,9 @@ body { font-family: "Open Sans", Helvetica, sans-serif; background: #FCF3F0; col
 
 #logo { margin-bottom: 50px; }
 
-.logo-title { color: #BE5739; text-transform: uppercase; letter-spacing: 8px; font-weight: 300; font-size: 2.4rem; margin-top: 0; margin-bottom: 0; }
+.logo-title { color: #BE5739; text-transform: uppercase; letter-spacing: 8px; font-weight: 300; font-size: 2.4rem; margin-top: 0; margin-bottom: 0; text-indent: -9999px; background: url("../images/logo-title-compact.svg"); width: 247px; height: 52px; background-size: 247px 52px; margin: 0 auto; }
 .logo-title span { font-family: "EB Garamond", Garamond, Georgia, serif; font-style: italic; text-transform: none; font-weight: normal; }
-@media (min-width: 767px) { .logo-title { background: url("../images/logo-title.svg") no-repeat; text-indent: -9999px; width: 517px; height: 24px; background-size: 517px 24px; margin: 50px auto 0; } }
+@media (min-width: 767px) { .logo-title { background: url("../images/logo-title.svg") no-repeat; text-indent: -9999px; width: 517px; height: 24px; background-size: 517px 24px; } }
 
 .section { padding-top: 50px; padding-bottom: 30px; border-bottom: 1px solid #FFACA0; }
 @media (min-width: 767px) { .section { padding-top: 70px; padding-bottom: 70px; } }

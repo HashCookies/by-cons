@@ -45,6 +45,12 @@ body {
   font-size: 2.4rem;
   margin-top: 0;
   margin-bottom: 0;
+  text-indent: -9999px;
+  background: url('../images/logo-title-compact.svg');
+  width: 247px;
+  height: 52px;
+  background-size: 247px 52px;
+  margin: 0 auto;
   span {
     font-family: $title;
     font-style: italic;
@@ -57,7 +63,6 @@ body {
     width: 517px;
     height: 24px;
     background-size: 517px 24px;
-    margin: 50px auto 0;
   }
 }
 
