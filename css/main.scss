@@ -5,3 +5,172 @@
 
 @import 'normalize';
 @import 'skeleton';
+$screen-xs: 480px;
+$screen-xs-max: 767px;
+$screen-sm-min: 767px;
+$screen-md-min: 1025px;
+
+$primary: #FFACA0;
+$dark: #302420;
+$titleDark: #684D44;
+$bodyBG: #FCF3F0;
+
+$font: "Open Sans", Helvetica, sans-serif;
+$title: "EB Garamond", Garamond, Georgia, serif;
+
+body {
+  font-family: $font;
+  background: $bodyBG;
+  color: $dark;
+}
+
+.cover {
+  background: white;
+  text-align: center;
+  padding: 50px 0;
+  @media (min-width: $screen-sm-min) {
+    padding: 100px 0;
+  }
+}
+
+#logo {
+  margin-bottom: 50px;
+}
+
+.logo-title {
+  color: #BE5739;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: 300;
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  span {
+    font-family: $title;
+    font-style: italic;
+    text-transform: none;
+    font-weight: normal;
+  }
+  @media (min-width: $screen-sm-min) {
+    background: url('/images/logo-title.svg') no-repeat;
+    text-indent: -9999px;
+    width: 517px;
+    height: 24px;
+    background-size: 517px 24px;
+    margin: 50px auto 0;
+  }
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  @media (min-width: $screen-sm-min) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  border-bottom: 1px solid $primary;
+}
+
+h3 {
+  font-size: 4.8rem;
+  font-family: $title;
+  font-weight: normal;
+  color: $titleDark;
+  small {
+    font-family: $font;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+}
+
+.title-right {
+  @media (min-width: $screen-sm-min) {
+    text-align: right;
+  }
+}
+
+h4 {
+  margin-bottom: 5px;
+  font-family: $title;
+  color: $titleDark;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 190%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+    list-style-image: url('/images/list-style.svg');
+    font-size: 1.6rem;
+    list-style-position: inside;
+  }
+}
+
+#contact-card {
+  background: $primary;
+  padding: 2.5rem 3rem;
+  color: white;
+  h4 {
+    color: white;
+  }
+  .button {
+    background: #FFD0C9;
+    color: $titleDark;
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+    border: none;
+
+  }
+}
+
+label {
+  color: $primary;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.form-control {
+  border-color: $primary !important;
+  background-color: #FBEDEA !important;
+  border-radius: 1px !important;
+}
+
+textarea.form-control {
+  height: 23.5rem;
+  resize: none;
+}
+
+.button-primary {
+  background:none !important;
+  color: $primary !important;
+  border-color: $primary !important;
+
+}
+
+dl {
+  dt {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+  }
+  dd {
+    margin-left: 0;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+}
