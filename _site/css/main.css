@@ -330,7 +330,7 @@ there.
 
 body { font-family: "Open Sans", Helvetica, sans-serif; background: #F5F4F2; color: #334244; }
 
-.cover { background: white url("/images/Unknown-5.jpg") no-repeat; background-size: cover; background-position: center; text-align: center; padding: 50px 0; }
+.cover { background: white url("../images/Unknown-5.jpg") no-repeat; background-size: cover; background-position: center; text-align: center; padding: 50px 0; }
 @media (min-width: 767px) { .cover { padding: 100px 0; } }
 .cover .overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: #6a685f; opacity: 0.4; }
 
