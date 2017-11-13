@@ -44,6 +44,22 @@ body {
     background-color: rgb(106, 104, 95);
     opacity: 0.4;
   }
+  .header {
+    position: absolute;
+    top: 100px;
+    z-index: 200;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+  .footer {
+    text-align: center;
+    position: absolute;
+    bottom: 25%;
+    left: 0;
+    right: 0;
+
+  }
 }
 
 
@@ -54,7 +70,7 @@ body {
 
 .tagline {
   display: block;
-  margin: 100px auto;
+  margin: 100px auto 25px;
   font-family: $title;
   color: $bodyBG;
   font-size: 30px;
@@ -224,7 +240,6 @@ dl {
   text-decoration: none;
   letter-spacing: 5px;
   font-family: $title;
-
   img {
     width: 80px;
     height: 80px;
