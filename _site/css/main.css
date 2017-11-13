@@ -326,18 +326,23 @@ there.
 /* Larger than tablet */
 /* Larger than desktop */
 /* Larger than Desktop HD */
-body { font-family: "Open Sans", Helvetica, sans-serif; background: #FCF3F0; color: #302420; }
+* { box-sizing: border-box; }
 
-.cover { background: white; text-align: center; padding: 50px 0; }
+body { font-family: "Open Sans", Helvetica, sans-serif; background: #F5F4F2; color: #334244; }
+
+.cover { background: white url("/images/Unknown-5.jpg") no-repeat; background-size: cover; background-position: center; text-align: center; padding: 50px 0; }
 @media (min-width: 767px) { .cover { padding: 100px 0; } }
+.cover .overlay { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: #6a685f; opacity: 0.4; }
 
-#logo { margin-bottom: 50px; }
+#logo { margin-bottom: 50px; margin: 0 auto; }
+
+.tagline { display: block; margin: 100px auto; font-family: "EB Garamond", Garamond, Georgia, serif; color: #F5F4F2; font-size: 30px; }
 
 .logo-title { color: #BE5739; text-transform: uppercase; letter-spacing: 8px; font-weight: 300; font-size: 2.4rem; margin-top: 0; margin-bottom: 0; text-indent: -9999px; background: url("../images/logo-title-compact.svg"); width: 247px; height: 52px; background-size: 247px 52px; margin: 0 auto; }
 .logo-title span { font-family: "EB Garamond", Garamond, Georgia, serif; font-style: italic; text-transform: none; font-weight: normal; }
 @media (min-width: 767px) { .logo-title { background: url("../images/logo-title.svg") no-repeat; text-indent: -9999px; width: 517px; height: 24px; background-size: 517px 24px; } }
 
-.section { padding-top: 50px; padding-bottom: 30px; border-bottom: 1px solid #FFACA0; }
+.section { padding-top: 50px; padding-bottom: 30px; border-bottom: 1px solid #D8C6C0; }
 @media (min-width: 767px) { .section { padding-top: 70px; padding-bottom: 70px; } }
 
 h3 { font-size: 4.8rem; font-family: "EB Garamond", Garamond, Georgia, serif; font-weight: normal; color: #684D44; }
@@ -356,18 +361,25 @@ p { font-size: 1.6rem; line-height: 190%; }
 ul { padding-left: 0; }
 ul li { list-style: none; list-style-image: url("../images/list-style.svg"); font-size: 1.6rem; list-style-position: inside; }
 
-#contact-card { background: #FFACA0; padding: 2.5rem 3rem; color: white; }
+#contact-card { background: #D8C6C0; padding: 2.5rem 3rem; color: white; }
 #contact-card h4 { color: white; }
 #contact-card a { color: white; }
 #contact-card .button { background: #FFD0C9; color: #684D44; font-size: 1.3rem; letter-spacing: 4px; border: none; }
 
-label { color: #FFACA0; text-transform: uppercase; font-size: 1.3rem; }
+label { color: #D8C6C0; text-transform: uppercase; font-size: 1.3rem; }
 
-.form-control { border-color: #FFACA0 !important; background-color: #FBEDEA !important; border-radius: 1px !important; }
+.form-control { border-color: #D8C6C0 !important; background-color: #FBEDEA !important; border-radius: 1px !important; }
 
 textarea.form-control { height: 23.5rem; resize: none; }
 
-.button-primary { background: none !important; color: #FFACA0 !important; border-color: #FFACA0 !important; }
+.button-primary { background: none !important; color: #D8C6C0 !important; border-color: #D8C6C0 !important; }
 
 dl dt { text-transform: uppercase; font-size: 1.3rem; }
 dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
+
+.text-justify { text-align: justify; }
+
+#learn-more { background: none; display: inline-block; background-position: left center; border: 5px solid #fff; padding: 10px 25px 10px 60px; position: relative; color: white; font-weight: bold; text-transform: uppercase; font-size: 18px; text-decoration: none; letter-spacing: 5px; font-family: "EB Garamond", Garamond, Georgia, serif; }
+#learn-more img { width: 80px; height: 80px; position: absolute; left: -30px; top: -15px; transition-duration: 400ms; }
+#learn-more:hover { background: rgba(255, 255, 255, 0.1); }
+#learn-more:hover img { transform: rotate(90deg); }

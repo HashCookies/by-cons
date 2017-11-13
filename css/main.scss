@@ -10,13 +10,19 @@ $screen-xs-max: 767px;
 $screen-sm-min: 767px;
 $screen-md-min: 1025px;
 
-$primary: #FFACA0;
-$dark: #302420;
+$primary: #D8C6C0;
+$dark: #334244;
+$offDark: #858B8D;
+
 $titleDark: #684D44;
-$bodyBG: #FCF3F0;
+$bodyBG: #F5F4F2;
 
 $font: "Open Sans", Helvetica, sans-serif;
 $title: "EB Garamond", Garamond, Georgia, serif;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: $font;
@@ -25,16 +31,33 @@ body {
 }
 
 .cover {
-  background: white;
+  background: white url('/images/Unknown-5.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 50px 0;
   @media (min-width: $screen-sm-min) {
     padding: 100px 0;
   }
+  .overlay {
+    position: absolute;left: 0;right: 0;top:0;bottom: 0;
+    background-color: rgb(106, 104, 95);
+    opacity: 0.4;
+  }
 }
+
 
 #logo {
   margin-bottom: 50px;
+  margin: 0 auto;
+}
+
+.tagline {
+  display: block;
+  margin: 100px auto;
+  font-family: $title;
+  color: $bodyBG;
+  font-size: 30px;
 }
 
 .logo-title {
@@ -181,4 +204,39 @@ dl {
     margin-bottom: 1.5rem;
   }
 
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#learn-more {
+  background: none;
+  display: inline-block;
+  background-position: left center;
+  border: 5px solid #fff;
+  padding: 10px 25px 10px 60px;
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-family: $title;
+
+  img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: -30px;
+    top: -15px;
+    transition-duration: 400ms;
+  }
+  &:hover {
+    background: transparentize(white, 0.9);
+    img {
+      transform: rotate(90deg);
+    }
+  }
 }
