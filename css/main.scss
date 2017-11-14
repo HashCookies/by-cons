@@ -254,7 +254,7 @@ dl {
   margin-bottom: 25px;
   background: url('../images/house-img.png');
   background-size: cover;
-  img {
+  #logo {
     width: 210px;
   }
   ul {
@@ -265,6 +265,7 @@ dl {
       display: inline-block;
       margin: 0 7px;
       list-style-image: url('../images/compass.png');
+      font-size: 18px;
       a {
         text-decoration: none;
         color: white;
@@ -273,6 +274,13 @@ dl {
       }
     }
   }
+}
+
+#about-bc {
+  width: 33px;
+  height: 14px;
+  margin-bottom: -2px;
+  margin-left: -1px;
 }
 
 .row {
