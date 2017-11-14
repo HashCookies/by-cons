@@ -396,4 +396,4 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 
 .inline-img { border: 10px solid white; margin-bottom: 15px; }
 
-.about-page #main-container { background: url("../images/map.png") no-repeat; background-position: center top -20px; background-size: contain; padding-top: 100px; }
+.about-page #main-container { padding-top: 50px; }
