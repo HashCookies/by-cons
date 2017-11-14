@@ -32,15 +32,10 @@ body {
 }
 
 .cover {
-  background: white url('../images/Unknown-5.jpg') no-repeat;
+  background: white url('../images/house-img.png') no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  .overlay {
-    position: absolute;left: 0;right: 0;top:0;bottom: 0;
-    background-color: rgb(106, 104, 95);
-    opacity: 0.4;
-  }
   .header {
     position: absolute;
     top: 20%;
@@ -255,8 +250,10 @@ dl {
 
 #main-header {
   background: white;
-  padding: 10px 15px;
+  padding: 20px 15px 15px;
   margin-bottom: 25px;
+  background: url('../images/house-img.png');
+  background-size: cover;
   img {
     width: 210px;
   }
@@ -270,8 +267,9 @@ dl {
       list-style-image: url('../images/compass.png');
       a {
         text-decoration: none;
-        color: $offDark;
+        color: white;
         font-weight: bold;
+        font-family: $title;
       }
     }
   }
