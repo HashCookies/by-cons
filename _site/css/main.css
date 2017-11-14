@@ -384,7 +384,7 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 #learn-more:hover { background: rgba(255, 255, 255, 0.1); }
 #learn-more:hover img { transform: rotate(90deg); }
 
-#main-header { background: white; padding: 20px 15px 15px; margin-bottom: 25px; background: url("../images/house-img.png"); background-position: center; background-size: cover; }
+#main-header { background: white; padding: 20px 15px 15px; background: url("../images/house-img.png"); background-position: center; background-size: cover; }
 #main-header #logo { width: 210px; }
 #main-header ul { margin-top: 20px; margin-bottom: 20px; padding-left: 0; }
 #main-header ul li { display: inline-block; margin: 0 7px; list-style-image: url("../images/compass.png"); font-size: 18px; }
@@ -395,3 +395,5 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 .row img { max-width: 100%; }
 
 .inline-img { border: 10px solid white; margin-bottom: 15px; }
+
+.about-page #main-container { background: url("../images/map.png") no-repeat; background-position: center top -20px; background-size: contain; padding-top: 100px; }

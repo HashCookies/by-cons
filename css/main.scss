@@ -251,7 +251,6 @@ dl {
 #main-header {
   background: white;
   padding: 20px 15px 15px;
-  margin-bottom: 25px;
   background: url('../images/house-img.png');
   background-position: center;
   background-size: cover;
@@ -293,4 +292,11 @@ dl {
 .inline-img {
   border: 10px solid white;
   margin-bottom: 15px;
+}
+
+.about-page #main-container {
+  background: url('../images/map.png') no-repeat;
+  background-position: center top -20px;
+  background-size: contain;
+  padding-top: 100px;
 }
