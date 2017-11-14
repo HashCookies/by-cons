@@ -13,6 +13,7 @@ $screen-md-min: 1025px;
 $primary: #D8C6C0;
 $dark: #334244;
 $offDark: #858B8D;
+$offWhite: #D7D5D3;
 
 $titleDark: #684D44;
 $bodyBG: #F5F4F2;
@@ -35,10 +36,6 @@ body {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 50px 0;
-  @media (min-width: $screen-sm-min) {
-    padding: 100px 0;
-  }
   .overlay {
     position: absolute;left: 0;right: 0;top:0;bottom: 0;
     background-color: rgb(106, 104, 95);
@@ -46,7 +43,7 @@ body {
   }
   .header {
     position: absolute;
-    top: 100px;
+    top: 20%;
     z-index: 200;
     text-align: center;
     left: 0;
@@ -193,7 +190,7 @@ label {
 
 .form-control {
   border-color: $primary !important;
-  background-color: #FBEDEA !important;
+  background-color: white !important;
   border-radius: 1px !important;
 }
 
@@ -252,6 +249,30 @@ dl {
     background: transparentize(white, 0.9);
     img {
       transform: rotate(90deg);
+    }
+  }
+}
+
+#main-header {
+  background: white;
+  padding: 10px 15px;
+  margin-bottom: 25px;
+  img {
+    width: 210px;
+  }
+  ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 0;
+    li {
+      display: inline-block;
+      margin: 0 7px;
+      list-style-image: url('../images/compass.png');
+      a {
+        text-decoration: none;
+        color: $offDark;
+        font-weight: bold;
+      }
     }
   }
 }

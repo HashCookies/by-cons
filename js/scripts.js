@@ -12,6 +12,6 @@ $(document).ready(function() {
      devW = 'auto';
      devH = 'auto';
    }
-   $('.cover').outerHeight(winH).width(winW);
+   $('.cover').height(winH).width(winW);
 
 });
