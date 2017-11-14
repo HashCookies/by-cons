@@ -390,3 +390,7 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 #main-header ul { margin-top: 20px; margin-bottom: 20px; padding-left: 0; }
 #main-header ul li { display: inline-block; margin: 0 7px; list-style-image: url("../images/compass.png"); }
 #main-header ul li a { text-decoration: none; color: #858B8D; font-weight: bold; }
+
+.row img { max-width: 100%; }
+
+.inline-img { border: 10px solid white; margin-bottom: 15px; }
