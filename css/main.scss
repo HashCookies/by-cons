@@ -294,6 +294,38 @@ dl {
   margin-bottom: 15px;
 }
 
+.about-page {
+  background: white;
+}
+
 .about-page #main-container {
   padding-top: 50px;
+
+}
+
+
+.about-cover {
+  background: #FDF7F6;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .container {
+    max-width: 560px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.lateral-thinking {
+  h2 {
+    color: #FFACA0;
+    font-family: $title;
+    small {
+      display: block;
+    }
+  }
+  img {
+    margin-top: 100px;
+  }
 }
