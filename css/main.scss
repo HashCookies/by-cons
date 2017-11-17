@@ -15,11 +15,12 @@ $dark: #334244;
 $offDark: #858B8D;
 $offWhite: #D7D5D3;
 
-$titleDark: #684D44;
+$titleDark: #3B3A36;
+$titleAlt: #FFACA0;
 $bodyBG: #F5F4F2;
 
 $font: "Open Sans", Helvetica, sans-serif;
-$title: "EB Garamond", Garamond, Georgia, serif;
+$title: "Merriweather", Garamond, Georgia, serif;
 
 * {
   box-sizing: border-box;
@@ -104,7 +105,10 @@ body {
     padding-top: 70px;
     padding-bottom: 70px;
   }
-  border-bottom: 1px solid $primary;
+}
+
+h2 {
+  font-family: $title;
 }
 
 h3 {
@@ -130,6 +134,7 @@ h3 {
 
 h4 {
   margin-bottom: 5px;
+  font-size: 2.4rem;
   font-family: $title;
   color: $titleDark;
 }
@@ -296,11 +301,20 @@ dl {
 
 .about-page {
   background: white;
+  h2 {
+    color: $titleAlt;
+    font-weight: normal;
+    margin-top: 0;
+    small {
+      font-family: $font;
+      text-transform: uppercase;
+      font-size: 50%;
+      letter-spacing: 5px;
+    }
+  }
 }
-
 .about-page #main-container {
   padding-top: 50px;
-
 }
 
 
@@ -319,7 +333,7 @@ dl {
 
 .lateral-thinking {
   h2 {
-    color: #FFACA0;
+    color: $titleAlt;
     font-family: $title;
     small {
       display: block;
@@ -328,4 +342,25 @@ dl {
   img {
     margin-top: 100px;
   }
+}
+
+.m-t {
+  margin-top: 15px;
+}
+
+.about-bay-section {
+  background: #FEFAFA;
+  border-top: 1px solid #FFEFEC;
+  border-bottom: 1px solid #FFEFEC;
+}
+
+h5 {
+  color: $titleAlt;
+  border-top: 1px solid $titleAlt;
+  padding-top: 15px;
+  font-family: $title;
+}
+
+.alt-col {
+  color: $titleAlt;
 }
