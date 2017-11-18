@@ -347,7 +347,7 @@ body { font-family: "Open Sans", Helvetica, sans-serif; background: #F5F4F2; col
 
 h2 { font-family: "Open Sans", Helvetica, sans-serif; }
 
-h3 { font-size: 4.8rem; font-family: "Open Sans", Helvetica, sans-serif; font-weight: normal; color: #3B3A36; }
+h3 { font-size: 4.8rem; font-family: "Open Sans", Helvetica, sans-serif; font-weight: normal; color: #FFACA0; }
 h3 small { font-family: "Open Sans", Helvetica, sans-serif; display: block; text-transform: uppercase; letter-spacing: 6px; margin-bottom: 10px; font-size: 2rem; }
 
 @media (min-width: 767px) { .title-right { text-align: right; } }
@@ -410,12 +410,18 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 
 .lateral-thinking h2 { color: #FFACA0; font-family: "Open Sans", Helvetica, sans-serif; }
 .lateral-thinking h2 small { display: block; }
-.lateral-thinking img { margin-top: 100px; }
+.lateral-thinking img { margin-top: 15px; }
 
 .m-t { margin-top: 15px; }
 
 .about-bay-section { background: #FEFAFA; border-top: 1px solid #FFEFEC; border-bottom: 1px solid #FFEFEC; }
+.about-bay-section .row { margin-bottom: 25px; }
+.about-bay-section img { margin-top: -5px; }
 
 h5 { color: #FFACA0; border-top: 1px solid #FFACA0; padding-top: 15px; font-family: "Open Sans", Helvetica, sans-serif; }
 
 .alt-col { color: #FFACA0; }
+
+.narrow-container { max-width: 670px; }
+
+.medium-container { max-width: 780px; }

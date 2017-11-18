@@ -116,7 +116,8 @@ h3 {
   font-size: 4.8rem;
   font-family: $title;
   font-weight: normal;
-  color: $titleDark;
+  color: $titleAlt;
+
   small {
     font-family: $font;
     display: block;
@@ -341,7 +342,7 @@ dl {
     }
   }
   img {
-    margin-top: 100px;
+    margin-top: 15px;
   }
 }
 
@@ -353,6 +354,12 @@ dl {
   background: #FEFAFA;
   border-top: 1px solid #FFEFEC;
   border-bottom: 1px solid #FFEFEC;
+  .row {
+    margin-bottom: 25px;
+  }
+  img {
+    margin-top: -5px;
+  }
 }
 
 h5 {
@@ -364,4 +371,12 @@ h5 {
 
 .alt-col {
   color: $titleAlt;
+}
+
+.narrow-container {
+  max-width: 670px;
+}
+
+.medium-container {
+  max-width: 780px;
 }
