@@ -20,7 +20,8 @@ $titleAlt: #FFACA0;
 $bodyBG: #F5F4F2;
 
 $font: "Open Sans", Helvetica, sans-serif;
-$title: "Merriweather", Garamond, Georgia, serif;
+$title: $font;
+$serif: "Merriweather", Garamond, Georgia, serif;
 
 * {
   box-sizing: border-box;
@@ -64,9 +65,9 @@ body {
 .tagline {
   display: block;
   margin: 100px auto 25px;
-  font-family: $title;
+  font-family: $serif;
   color: $bodyBG;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .logo-title {
