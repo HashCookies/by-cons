@@ -23,6 +23,8 @@ $font: "Open Sans", Helvetica, sans-serif;
 $title: $font;
 $serif: "Merriweather", Garamond, Georgia, serif;
 
+$headingColor: #002366;
+
 * {
   box-sizing: border-box;
 }
@@ -116,7 +118,7 @@ h3 {
   font-size: 4.8rem;
   font-family: $title;
   font-weight: normal;
-  color: $titleAlt;
+  color: $headingColor;
 
   small {
     font-family: $font;
@@ -155,12 +157,15 @@ p {
 }
 
 ul {
-  padding-left: 0;
+  padding-left: 20px;
   li {
     list-style: none;
-    list-style-image: url('../images/list-style.svg');
     font-size: 1.6rem;
-    list-style-position: inside;
+    &:before {
+      content: '\2013';
+      position: absolute;
+      margin-left: -20px;
+    }
   }
 }
 
@@ -255,12 +260,29 @@ dl {
   }
 }
 
+#main-body {
+  margin-top: 103px;
+  overflow: auto;
+  .homepage & {
+    margin-top: 0;
+  }
+}
+
 #main-header {
+  .homepage & {
+    display: none;
+  }
   background: white;
+  overflow: auto;
   padding: 20px 15px 15px;
   background: url('../images/house-img.png');
   background-position: center;
   background-size: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  z-index: 100000;
   #logo {
     width: 210px;
   }
@@ -304,7 +326,7 @@ dl {
 .about-page {
   background: white;
   h2 {
-    color: $titleAlt;
+    color: $headingColor;
     font-weight: normal;
     margin-top: 0;
     small {
@@ -335,7 +357,7 @@ dl {
 
 .lateral-thinking {
   h2 {
-    color: $titleAlt;
+    color: $headingColor;
     font-family: $title;
     small {
       display: block;
@@ -363,7 +385,7 @@ dl {
 }
 
 h5 {
-  color: $titleAlt;
+  color: $headingColor;
   border-top: 1px solid $titleAlt;
   padding-top: 15px;
   font-family: $title;
