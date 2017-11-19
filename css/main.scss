@@ -23,7 +23,7 @@ $font: "Open Sans", Helvetica, sans-serif;
 $title: $font;
 $serif: "Merriweather", Garamond, Georgia, serif;
 
-$headingColor: #002366;
+$headingColor: #334244;
 
 * {
   box-sizing: border-box;
@@ -117,9 +117,8 @@ h2 {
 h3 {
   font-size: 4.8rem;
   font-family: $title;
-  font-weight: normal;
   color: $headingColor;
-
+  font-weight: 600;
   small {
     font-family: $font;
     display: block;
@@ -139,6 +138,7 @@ h3 {
 h4 {
   margin-bottom: 5px;
   font-size: 2.4rem;
+  font-weight: 600;
   font-family: $title;
   color: $titleDark;
 }
