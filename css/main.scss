@@ -69,7 +69,11 @@ body {
   margin: 100px auto 25px;
   font-family: $serif;
   color: $bodyBG;
-  font-size: 26px;
+  font-size: 22px;
+  @media (min-width: $screen-sm-min) {
+    font-size: 26px;
+
+  }
 }
 
 .logo-title {
@@ -235,15 +239,19 @@ dl {
   display: inline-block;
   background-position: left center;
   border: 5px solid #fff;
-  padding: 10px 25px 10px 60px;
   position: relative;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 18px;
   text-decoration: none;
   letter-spacing: 5px;
   font-family: $title;
+  font-size: 16px;
+  padding: 10px 20px 10px 55px;
+  @media (min-width: $screen-sm-min) {
+    padding: 10px 25px 10px 60px;
+    font-size: 18px;
+  }
   img {
     width: 80px;
     height: 80px;
@@ -266,6 +274,19 @@ dl {
   .homepage & {
     margin-top: 0;
   }
+  @media (max-width: $screen-xs-max) {
+    margin-top: 128px;
+    .homepage & {
+      margin-top: 0;
+    }
+  }
+}
+
+.logo-block {
+  @media (max-width: $screen-xs-max) {
+    text-align: center;
+    transform: translateX(-10px);
+  }
 }
 
 #main-header {
@@ -274,7 +295,7 @@ dl {
   }
   background: white;
   overflow: auto;
-  padding: 20px 15px 15px;
+  padding: 15px 0 5px;
   background: url('../images/house-img.png');
   background-position: center;
   background-size: cover;
@@ -283,6 +304,9 @@ dl {
   right: 0;
   top:0;
   z-index: 100000;
+  @media (min-width: $screen-sm-min) {
+    padding: 20px 0 15px;
+  }
   #logo {
     width: 210px;
   }
@@ -290,11 +314,17 @@ dl {
     margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 0;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 10px;
+      margin-bottom: 10px;
+        text-align: center;
+    }
     li {
       display: inline-block;
       margin: 0 7px;
       list-style-image: url('../images/compass.png');
       font-size: 18px;
+
       a {
         text-decoration: none;
         color: white;

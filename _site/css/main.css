@@ -336,7 +336,8 @@ body { font-family: "Open Sans", Helvetica, sans-serif; background: #F5F4F2; col
 
 #logo { margin-bottom: 50px; margin: 0 auto; }
 
-.tagline { display: block; margin: 100px auto 25px; font-family: "Merriweather", Garamond, Georgia, serif; color: #F5F4F2; font-size: 26px; }
+.tagline { display: block; margin: 100px auto 25px; font-family: "Merriweather", Garamond, Georgia, serif; color: #F5F4F2; font-size: 22px; }
+@media (min-width: 767px) { .tagline { font-size: 26px; } }
 
 .logo-title { color: #BE5739; text-transform: uppercase; letter-spacing: 8px; font-weight: 300; font-size: 2.4rem; margin-top: 0; margin-bottom: 0; text-indent: -9999px; background: url("../images/logo-title-compact.svg"); width: 247px; height: 52px; background-size: 247px 52px; margin: 0 auto; }
 .logo-title span { font-family: "Open Sans", Helvetica, sans-serif; font-style: italic; text-transform: none; font-weight: normal; }
@@ -382,18 +383,25 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 
 .text-justify { text-align: justify; }
 
-#learn-more { background: none; display: inline-block; background-position: left center; border: 5px solid #fff; padding: 10px 25px 10px 60px; position: relative; color: white; font-weight: bold; text-transform: uppercase; font-size: 18px; text-decoration: none; letter-spacing: 5px; font-family: "Open Sans", Helvetica, sans-serif; }
+#learn-more { background: none; display: inline-block; background-position: left center; border: 5px solid #fff; position: relative; color: white; font-weight: bold; text-transform: uppercase; text-decoration: none; letter-spacing: 5px; font-family: "Open Sans", Helvetica, sans-serif; font-size: 16px; padding: 10px 20px 10px 55px; }
+@media (min-width: 767px) { #learn-more { padding: 10px 25px 10px 60px; font-size: 18px; } }
 #learn-more img { width: 80px; height: 80px; position: absolute; left: -30px; top: -15px; transition-duration: 400ms; }
 #learn-more:hover { background: rgba(255, 255, 255, 0.1); }
 #learn-more:hover img { transform: rotate(90deg); }
 
 #main-body { margin-top: 103px; overflow: auto; }
 .homepage #main-body { margin-top: 0; }
+@media (max-width: 767px) { #main-body { margin-top: 128px; }
+  .homepage #main-body { margin-top: 0; } }
 
-#main-header { background: white; overflow: auto; padding: 20px 15px 15px; background: url("../images/house-img.png"); background-position: center; background-size: cover; position: fixed; left: 0; right: 0; top: 0; z-index: 100000; }
+@media (max-width: 767px) { .logo-block { text-align: center; transform: translateX(-10px); } }
+
+#main-header { background: white; overflow: auto; padding: 15px 0 5px; background: url("../images/house-img.png"); background-position: center; background-size: cover; position: fixed; left: 0; right: 0; top: 0; z-index: 100000; }
 .homepage #main-header { display: none; }
+@media (min-width: 767px) { #main-header { padding: 20px 0 15px; } }
 #main-header #logo { width: 210px; }
 #main-header ul { margin-top: 20px; margin-bottom: 20px; padding-left: 0; }
+@media (max-width: 767px) { #main-header ul { margin-top: 10px; margin-bottom: 10px; text-align: center; } }
 #main-header ul li { display: inline-block; margin: 0 7px; list-style-image: url("../images/compass.png"); font-size: 18px; }
 #main-header ul li a { text-decoration: none; color: white; font-weight: bold; font-family: "Open Sans", Helvetica, sans-serif; }
 
