@@ -421,8 +421,8 @@ dl dd { margin-left: 0; font-size: 1.6rem; margin-bottom: 1.5rem; }
 .about-cover .container { max-width: 560px; }
 .about-cover p { font-size: 18px; line-height: 30px; }
 
-.lateral-thinking h2 { color: #334244; font-family: "Open Sans", Helvetica, sans-serif; }
-.lateral-thinking h2 small { display: block; }
+.lateral-thinking h2 { color: #334244; font-family: "Open Sans", Helvetica, sans-serif; font-weight: 600; }
+.lateral-thinking h2 small { font-weight: 400; display: block; }
 .lateral-thinking img { margin-top: 15px; }
 
 .m-t { margin-top: 15px; }
