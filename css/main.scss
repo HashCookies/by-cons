@@ -42,7 +42,7 @@ body {
   text-align: center;
   .header {
     position: absolute;
-    top: 20%;
+    top: 90px;
     z-index: 200;
     text-align: center;
     left: 0;
@@ -297,7 +297,7 @@ dl {
   overflow: auto;
   padding: 15px 0 5px;
   background: url('../images/house-img.png');
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   position: fixed;
   left: 0;
