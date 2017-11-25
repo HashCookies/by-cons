@@ -296,7 +296,7 @@ dl {
   background: white;
   overflow: auto;
   padding: 15px 0 5px;
-  background: url('../images/house-img.png');
+  background: url('../images/house-img.jpg');
   background-position: center top;
   background-size: cover;
   position: fixed;
@@ -322,9 +322,11 @@ dl {
     li {
       display: inline-block;
       margin: 0 7px;
-      list-style-image: url('../images/compass.png');
+      list-style: none;
       font-size: 18px;
-
+      &:before {
+        display: none;
+      }
       a {
         text-decoration: none;
         color: white;
