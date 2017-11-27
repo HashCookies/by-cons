@@ -323,7 +323,13 @@ dl {
       display: inline-block;
       margin: 0 7px;
       list-style: none;
-      font-size: 18px;
+      font-size: 15px;
+      @media (min-width: 413px) {
+        font-size: 17px;
+      }
+      @media (min-width: $screen-sm-min) {
+        font-size: 18px;
+      }
       &:before {
         display: none;
       }
@@ -373,6 +379,11 @@ dl {
   padding-top: 50px;
 }
 
+.container {
+  img {
+    max-width: 100%;
+  }
+}
 
 .about-cover {
   background: #FDF7F6;

@@ -13,5 +13,10 @@ $(document).ready(function() {
      devH = 'auto';
    }
    $('.cover').height(winH).width(winW);
+   $('#learn-more').on('touchstart', function() {
+     $('#learn-more img').css({
+       transform: "rotate(90deg)"
+     }, 400);
+   })
 
 });
